@@ -9,6 +9,8 @@ import { db } from '../firebase'
 import Schools from '../components/Schools'
 
 function About() {
+    document.title = "bear: about"
+
     const [flip, setFlip] = useState(false);
 
     const props = useSpring({
@@ -26,6 +28,7 @@ function About() {
         <div className='h-auto'>
             <div className='h-full backdrop-blur-sm backdrop-brightness-75'>
                 <animated.div className='grid gap-y-20 justify-center px-10 py-20 md:gap-y-24 md:flex-nowrap md:px-10 xl:px-64' style={props}>
+                    {loading && <div className='h-screen'></div>}
                     <div className='flex flex-wrap gap-32 justify-center gap-y-12'>
                         {docs?.map((doc, index) => (
                             <div key={ index }>

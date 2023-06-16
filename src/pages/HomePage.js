@@ -3,6 +3,7 @@ import '../index.css';
 import { useSpring, animated } from 'react-spring'
 
 function HomePage() {
+    document.title = "bear: welcome"
     const [flip, setFlip] = useState(false);
 
     const props = useSpring({

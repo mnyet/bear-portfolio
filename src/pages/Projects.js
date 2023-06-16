@@ -8,6 +8,8 @@ import { db } from '../firebase'
 import Tags from '../components/Tags';
 
 function Projects() {
+    document.title = "bear: projects"
+
     const [flip, setFlip] = useState(false);
 
     const props = useSpring({
@@ -25,10 +27,10 @@ function Projects() {
         <div className='h-auto'>
             <div className='backdrop-blur-sm backdrop-brightness-75 drop-shadow-lg'>
                 <animated.div className='grid gap-y-10 justify-center px-10 py-20 md:px-10 xl:px-64' style={props}>
+                    {loading && <div className='h-screen'></div>}
                     <h1 className='text-white text-4xl font-bold m-auto text-center'>my projects</h1>
                     <div className="m-auto h-1 w-1/3 bg-darkGreen-300"></div>
                     <div className='flex flex-wrap gap-5 lg:gap-5 justify-center'>
-                        {loading && "Loading..."}
                         {docs?.map((doc, index) => (
                             <div className="max-w-sm w-80 pb-5 rounded overflow-hidden shadow-lg transition duration-300 bg-darkGreen-400 hover:scale-105" key={ index }>
                                 <img className="w-full h-60 object-cover object-top" src={ doc.imglink == "#" ? noimage : doc.imglink } alt={ doc.imgalt }></img>

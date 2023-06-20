@@ -11,7 +11,7 @@ function Tags({ path }) {
         <div>
             {loading && "Loading..."}
             {docs?.map((doc, index) => (
-                <span className="inline-block bg-darkGreen-500 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={ index }>#{ doc.name }</span>
+                <span className="inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={ index }>#{ doc.name }</span>
             ))}
         </div>
     )

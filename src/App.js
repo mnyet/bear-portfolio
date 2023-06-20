@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App bg-[url(https://images.wallpaperscraft.com/image/single/forest_trees_fog_110131_1280x720.jpg)]
-        bg-cover bg-center">
+        bg-cover bg-center" style={{fontFamily: "'Roboto', sans-serif"}}>
         <Navbar/>
           <div className='content'>
             <Routes>

@@ -63,7 +63,7 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="m-auto h-1 w-1/3 bg-darkGreen-300"></div>
+                    <div className="m-auto h-1 w-1/3 bg-white"></div>
                     <div className='text-white grid gap-y-20 justify-center drop-shadow-xl'>
                         <h1 className='text-3xl font-semibold text-center'>Eductional Attainment:</h1>
                         <div className='grid text-center justify-center gap-10 p-10 shadow-2xl bg-gray-950 bg-opacity-30 rounded-md'>

@@ -26,7 +26,7 @@ function HomePage() {
                                 <h1 className='text-white text-4xl'>Hello, i am bear.</h1>
                                 <h1 className='text-white text-4xl'>Hello, i am bear.</h1>
                                 <br></br>
-                                <h1 className='text-white italic text-2xl'>and i create random shit.</h1>
+                                <h1 className='text-white italic text-2xl'>and i create random stuff.</h1>
                             </div>
                             <div className='grid justify-center'>
                                 <a href="/projects"><button className='px-4 py-3 rounded-full text-white text-l shadow-2xl bg-darkGreen-200 hover:bg-darkGreen-100'>view portfolio</button></a>

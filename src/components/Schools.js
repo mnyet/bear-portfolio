@@ -12,16 +12,16 @@ function Schools() {
     const [docs, loading, error, snapshot] = useCollectionData(query);
 
     return (
-        <div className='grid gap-10 content-center justify-center lg:grid-cols-3 lg:gap-5'>
+        <div className='w-full grid lg:grid-cols-2 gap-x-20 gap-y-20 content-center justify-center'>
             {docs?.map((doc, index) => (
-                <div className='flex' key={ index }>
+                <div className='flex flex-col lg:flex-row' key={ index }>
                     <FontAwesomeIcon className='text-6xl p-5 m-auto' icon={faGraduationCap} />
-                    <a className='grid text-left content-center' href={ doc.schoollink } target='_blank' rel='noreferrer'>
-                        <p><strong>{ doc.level }</strong></p>
-                        <p>{ doc.school }</p>
+                    <a className='grid text-center lg:content-start lg:text-left' href={ doc.schoollink } target='_blank' rel='noreferrer'>
+                        <p className='text-lg'><strong>{ doc.level }</strong></p>
+                        <p className='text-sm'>{ doc.school }</p>
                         {doc.field !== '#' && (
-                        <p><strong>{fieldVisible && doc.field}</strong></p>)}
-                        <p>{ doc.year }</p>
+                        <p className='text-xs'><strong>{fieldVisible && doc.field}</strong></p>)}
+                        <p className='text-xs'>{ doc.year }</p>
                     </a>
                 </div>
             ))}

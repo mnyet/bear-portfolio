@@ -3,6 +3,8 @@ import '../index.css';
 import { useSpring, animated } from 'react-spring'
 
 function HomePage() {
+    window.location.href = "https://janbercalamba.netlify.app/";
+
     document.title = "bear: welcome"
     const [flip, setFlip] = useState(false);
 

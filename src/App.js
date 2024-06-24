@@ -9,6 +9,9 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 
 function App() {
+  {/* Redirect to new website. */}
+  window.location.href = "https://janbercalamba.netlify.app/";
+
   return (
     <Router>
       <div className="App bg-[url(https://images.wallpaperscraft.com/image/single/forest_trees_fog_110131_1280x720.jpg)]

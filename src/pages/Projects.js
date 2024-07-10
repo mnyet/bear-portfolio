@@ -9,6 +9,7 @@ import Tags from '../components/Tags';
 import profile from '../img/profile.jpg';
 
 function Projects() {
+    window.location.href = "https://janbercalamba.netlify.app/#projects";
     document.title = "bear: projects"
 
     const [flip, setFlip] = useState(false);
